@@ -12,7 +12,7 @@ export default function Home({ posts }) {
           <h1 className="text-lg text-center">Oraciones</h1>
         </header>
 
-        <h2 className="">All Posts</h2>
+        <p className="">All Posts</p>
         <ol className="list-none ">
           {posts.map((post) => {
             const date = new Date(post.last_edited_time).toLocaleString(
