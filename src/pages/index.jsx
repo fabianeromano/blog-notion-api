@@ -23,6 +23,7 @@ export default function Home({ posts }) {
                 year: "numeric",
               }
             );
+            
             return (
               <Link key={post.id} href={`/${post.id}`}>
                 <li className="pl-2 list-none rounded-md bg-zinc-200 hover:scale-95">

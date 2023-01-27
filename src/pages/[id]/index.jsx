@@ -14,8 +14,9 @@ export const Text = ({ text }) => {
       annotations: { bold, code, color, italic, strikethrough, underline },
       text,
     } = value;
+    
     return (
-      <span
+      <span key={value.plain_text}
         className={[
           bold ? styles.bold : "",
           code ? styles.code : "",
